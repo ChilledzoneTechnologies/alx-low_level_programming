@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -16,7 +16,7 @@ int main(void)
 	_putchar(114);
 	_putchar(116);
 	_putchar(111);
-	_putchar(111);
+	_putchar(110);
 	_putchar ('\n');
 	return (0);
 }
