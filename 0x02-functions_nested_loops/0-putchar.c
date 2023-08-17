@@ -2,20 +2,19 @@
 
 
 /**
- * main - Entry point
+ * main - check the code
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char _putchar[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	unsigned int c;
-	for (c = 0; c < sizeof(_putchar); c++)
+	char c;
 
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(_putchar[c]);
+		_putchar(c);
 	}
 _putchar('\n');
-return (0);
 }
+
