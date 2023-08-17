@@ -1,6 +1,6 @@
 #include "main.c"
 /**
-* main - test function for positive or negative function
+* main - test for positive or negative function
 * Return: 0
 */
 
