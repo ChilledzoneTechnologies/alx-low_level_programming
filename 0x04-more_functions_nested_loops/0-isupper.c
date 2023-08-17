@@ -1,24 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - causes an infinite loop
-* Return: 0
+ * _isupper - uppercase letters
+ * @c: char to check
+ *
+ * Return: 0 or 1
 */
 
-int main(void)
+int _isupper(int c)
 {
-	int i;
-
-	printf("Infinite loop incoming :(\n");
-
-	i = 0;
-
-	/*while (i < 10)*/
-	/*{*/
-		/*putchar(i);*/
-	/*}*/
-
-	printf("Infinite loop avoided! \\o/\n");
-
-	return (0);
+	if ((c >= 'A') && (c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
