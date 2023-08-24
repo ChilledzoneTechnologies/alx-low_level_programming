@@ -2,8 +2,7 @@
 
 
 /**
- * string_toupper - Function that reverses the content of an array of integers.
- * @s: s is the array
+ * string_toupper - function that changes all lowercase letters of a string to uppercase.
  * Return: Always 0.
  */
 
