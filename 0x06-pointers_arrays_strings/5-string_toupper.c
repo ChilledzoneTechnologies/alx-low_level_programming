@@ -3,11 +3,10 @@
 
 /**
  * string_toupper - Function that reverses the content of an array of integers.
- *
  * @s: s is the array
- *
  * Return: Always 0.
  */
+
 char *string_toupper(char *)
 {
 	int i = 0;
