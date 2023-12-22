@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_delete -function  deletes a hash table
- *
- * @ht: Struct hash table
- * Return: none
+ * hash_table_delete - delete the hash table
+ * @ht: Struct Hash Table
+ * Return: None
  */
+
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned int index;
