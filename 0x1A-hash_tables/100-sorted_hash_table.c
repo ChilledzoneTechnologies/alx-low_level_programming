@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * shash_table_create -function creates a shash table with a given size
+ * shash_table_create - creates a shash table with a given size
  *
- * @size: The size of the shash table
+ * @size: size of the shash table
  * Return: the created shash table, or NULL if function fails
  */
 shash_table_t *shash_table_create(unsigned long int size)
@@ -71,7 +71,7 @@ shash_node_t *add_n_shash(shash_node_t **h, const char *key, const char *value)
 }
 
 /**
- * add_i_shash -Function adds a node on the DLL of the shash table
+ * add_i_shash - adds a node on the DLL of the shash table
  *
  * @ht: pointer to the table
  * @new: new node to add
