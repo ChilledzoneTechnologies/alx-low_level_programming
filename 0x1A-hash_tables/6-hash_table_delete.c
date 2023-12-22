@@ -3,29 +3,42 @@
 /**
  * hash_table_delete -function  deletes a hash table
  *
- * @ht: pointer to the hash table
- * Return: no return
+ * @ht: Struct hash table
+ * Return: none
  */
 void hash_table_delete(hash_table_t *ht)
 {
-	unsigned long int i;
-	hash_node_t *tmp1;
-	hash_node_t *tmp2;
+	unsigned int index;
+	hash_node_t *tmp;
 
-	if (ht == NULL)
-		return;
-
-	for (i = 0; i < ht->size; i++)
+	while (index < ht->size)
 	{
-		tmp1 = ht->array[i];
-		while ((tmp2 = tmp1) != NULL)
+		if (ht->array[index] != NULL)
 		{
-			tmp1 = tmp1->next;
-			free(tmp2->key);
-			free(tmp2->value);
-			free(tmp2);
+			tmp = ht->array[index];
+			free_list(tmp);
+			ht->array[index] = NULL;
 		}
+		index++;
 	}
 	free(ht->array);
 	free(ht);
+	ht = NULL;
+}
+
+/**
+ * free_list - Realease the memory allocated for a list
+ *
+ * @head: A pointer to the first node of the list to free
+ */
+
+void free_list(hash_node_t *head)
+{
+	if (head)
+	{
+		free_list(head->next);
+		free(head->key);
+		free(head->value);
+		free(head);
+	}
 }
